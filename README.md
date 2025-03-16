@@ -5,8 +5,8 @@ ContextWhisperer is an intelligent context management system for AI-assisted cod
 ## Problem
 
 When working with AI coding assistants, context management is crucial but challenging:
-- **Too little context**: The AI loses important details about the codebase, leading to inconsistent or incorrect suggestions
-- **Too much context**: The AI gets overwhelmed with information, resulting in confused or unfocused responses
+- **Context starvation: Too little context**: The AI loses important details about the codebase, leading to inconsistent or incorrect suggestions
+- **Context overload: Too much context**: The AI gets overwhelmed with information, resulting in confused or unfocused responses
 - **Context switching**: Starting new chat sessions means rebuilding context from scratch, wasting time and computational resources
 
 ## Solution
@@ -19,7 +19,21 @@ ContextWhisperer runs a series of intelligent prompts that:
 
 The project uses a deliberate separation between AI and human documentation:
 - `.docs/` - Contains AI-optimized context files
-- `docs/` - Traditional documentation for human developers
+- `docs/` - Traditional documentation for human developers (we propose standardizing on `docs/` but you can use any other directory name)
+
+## Self-Documenting Example
+
+ContextWhisperer uses itself to generate its own documentation! Check out `.docs/context.md` to see:
+- How the tool analyzes a codebase
+- What the output looks like
+- How documentation is structured
+- Token management in action
+
+This "dogfooding" approach means:
+1. We trust our own tool
+2. You can see real examples of its output
+3. The documentation stays current with the codebase
+4. We catch potential issues early
 
 ## How It Works
 
