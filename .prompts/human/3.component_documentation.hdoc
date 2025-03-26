@@ -1,0 +1,41 @@
+Create detailed documentation for the core components of the system:
+
+ACCURACY REQUIREMENTS:
+- Document ONLY components that exist in the actual codebase
+- Provide EXACT file references for each component using "filename:line" format 
+- Include actual method signatures and interfaces, not approximations
+- DO NOT document hypothetical components or planned features
+- If component behavior is unclear, state "Behavior not fully documented in code" rather than guessing
+- Base all examples on actual usage patterns found in the codebase
+
+1. For each component, document:
+   - Purpose and responsibilities
+   - Interfaces and public APIs
+   - Dependencies and relationships to other components
+   - Internal architecture and design patterns
+   - Configuration options and default values
+   - Error handling approach
+   - Performance characteristics
+
+2. Include code examples that demonstrate:
+   - How to instantiate and initialize the component
+   - Common usage patterns
+   - Extension points
+   - Typical error scenarios and handling
+
+3. Organize components by logical subsystem and include diagrams showing their relationships.
+
+STRUCTURE FORMAT:
+Follow the scaffold.template guidance for Component Documentation:
+- Document public interfaces with their contracts
+- Trace dependencies between components
+- Include state management and lifecycle details
+- Follow the standard document structure format specified in the template
+
+Save the output as "component_documentation.md" in "docs/ai-generated/".
+
+PREFERENCES:
+- Follow all settings in the preferences.config file for formatting, environment, and style choices
+- Use terminal command formats based on the shell specified in preferences
+- Match the specified code style preferences for any code snippets
+- Adhere to the documentation style and content preferences 

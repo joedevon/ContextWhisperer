@@ -1,0 +1,72 @@
+# Multi-Phase Documentation Scaffold Template
+
+## Phase Structure
+This template structures the documentation generation into clearly defined phases, each with specific outputs. 
+The phases should be executed in order, with each phase building upon the previous one.
+
+## Analysis Phases
+
+### Phase 1: Structure Analysis
+- Generate directory structure overview and component map
+- Document key entry points and configuration files
+- Identify module boundaries and dependencies
+- Output format includes annotated tree views and component diagrams
+
+### Phase 2: Pattern Analysis
+- Identify architectural patterns used in the codebase
+- Document design decisions and their implications
+- Map data structures and their relationships
+- Create pattern-focused component diagrams
+
+### Phase 3: Workflow Analysis
+- Trace key user and system workflows through the codebase
+- Map API endpoints to their implementations
+- Document event flows and state transitions
+- Create sequence diagrams for critical paths
+
+## Standard Document Structure
+
+Each generated document should follow this common structure:
+
+```markdown
+# [Document Title]
+
+## Overview
+[Concise introduction with purpose and scope]
+
+## Main Content
+[Organized into clear sections with file references using filename:line format]
+
+## Key Insights
+[Important takeaways that summarize the critical points]
+
+## Related Documents
+[Links to other generated documents that relate to this content]
+```
+
+## Phase-Specific Guidance
+
+### For Architecture Overview
+- Emphasize system boundaries and integration points
+- Include deployment architecture and runtime dependencies
+- Document critical architectural decisions with filename:line evidence
+
+### For Component Documentation
+- Document public interfaces with their contracts
+- Trace dependencies between components
+- Include state management and lifecycle details
+
+### For Workflow Documentation
+- Start with user-triggered actions and follow them through the system
+- Highlight error handling and edge cases
+- Document configuration options that affect workflows
+
+### For Troubleshooting
+- Each issue must include specific file references
+- Solutions should include verifiable code examples
+- Prevention strategies should reference architectural principles
+
+## Token Usage
+- Break lengthy documents into logical sections
+- For each file aim for 5-10 sections with clear headings
+- Use bullet points for better readability and precision 

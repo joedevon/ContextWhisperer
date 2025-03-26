@@ -1,0 +1,38 @@
+Document the key workflows and business processes implemented in the codebase:
+
+ACCURACY REQUIREMENTS:
+- Document ONLY workflows and processes that have concrete implementations in the code
+- Trace each workflow with EXACT file references using "filename:line" format
+- Include REAL function calls and method signatures, not approximations
+- DO NOT include hypothetical or planned workflows without code evidence
+- If workflow behavior is unclear or incomplete, explicitly state "Workflow implementation incomplete in code"
+- Base all diagrams on actual control flow observed in the codebase
+
+1. Identify and describe each significant workflow or process
+2. For each workflow, provide:
+   - Step-by-step explanation of what happens
+   - Sequence diagrams showing the flow of operations
+   - Key classes/functions involved at each step
+   - Important decision points and alternative paths
+   - Error handling and edge cases
+   - Performance considerations
+3. Include examples of how the workflow handles typical user scenarios
+
+STRUCTURE FORMAT:
+Follow the scaffold.template guidance for Workflow Documentation:
+- Start with user-triggered actions and follow them through the system
+- Highlight error handling and edge cases
+- Document configuration options that affect workflows
+- Follow the standard document structure format specified in the template
+
+Focus on explaining both technical implementation and business purpose.
+Make complex flows understandable through clear language and visual aids.
+
+Save the output as "workflows_and_processes.md" in "docs/ai-generated/". 
+
+PREFERENCES:
+- Follow all settings in the preferences.config file for formatting, environment, and style choices
+- Use terminal command formats based on the shell specified in preferences
+- Use the preferred visualization method for flow diagrams as specified in preferences
+- Match the specified code style preferences for any code snippets
+- Adhere to the documentation style and content preferences 

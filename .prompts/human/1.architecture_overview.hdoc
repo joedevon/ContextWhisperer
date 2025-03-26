@@ -1,0 +1,26 @@
+Generate a comprehensive architecture overview document that:
+
+ACCURACY REQUIREMENTS:
+- Base all information EXCLUSIVELY on evidence found in the codebase
+- DO NOT include components, patterns or flows that cannot be directly verified in the code
+- If uncertain about any aspect, clearly mark it as "Potentially Missing Information" rather than guessing
+- For any architectural decisions, cite specific file locations that demonstrate the implementation
+- Use the format "filename:line" when referencing specific code evidence
+
+1. Explains the high-level system architecture with clear diagrams (described in markdown)
+2. Details the key components and their responsibilities
+3. Illustrates how data flows through the system
+4. Documents significant architectural decisions and their rationales
+5. Describes key design patterns used and why they were chosen
+6. Outlines technical constraints and how they shaped the architecture
+
+Include both conceptual (what and why) and structural (how) aspects of the architecture.
+Use clear headings, diagrams, and examples that aid human understanding.
+
+Save the output as "architecture_overview.md" in "docs/ai-generated/". 
+
+PREFERENCES:
+- Follow all settings in the preferences.config file for formatting, environment, and style choices
+- Use terminal command formats based on the shell specified in preferences
+- Match the specified code style preferences for any code snippets
+- Adhere to the documentation style and content preferences 

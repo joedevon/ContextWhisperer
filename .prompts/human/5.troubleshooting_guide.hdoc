@@ -1,0 +1,35 @@
+Create a comprehensive troubleshooting guide that will help developers diagnose and resolve common issues:
+
+ACCURACY REQUIREMENTS:
+- Include ONLY issues that can be verified from actual code, tests, or configuration files
+- For each issue, provide EXACT file references where the problem may occur using "filename:line" format
+- Use REAL error messages copied directly from the codebase, not fabricated ones
+- DO NOT include hypothetical problems without evidence in the code
+- If knowledge is incomplete in any area, explicitly state "No code evidence found for this issue"
+- Include executable code examples that match the project's actual syntax and conventions
+
+1. Identify common error scenarios, bugs, and challenges
+2. For each issue, document:
+   - Symptoms and error messages
+   - Possible causes
+   - Step-by-step troubleshooting process
+   - Solutions with code examples where appropriate
+   - Prevention strategies
+3. Include sections for:
+   - Development environment issues
+   - Build and deployment problems
+   - Runtime errors
+   - Performance bottlenecks
+   - Testing challenges
+4. Add a "Lessons Learned" section with architectural insights gained from past issues
+
+Make the guide practical and action-oriented.
+Use a problem→diagnosis→solution format that's easy to follow.
+
+Save the output as "troubleshooting_guide.md" in "docs/ai-generated/". 
+
+PREFERENCES:
+- Follow all settings in the preferences.config file for formatting, environment, and style choices
+- Use terminal command formats based on the shell specified in preferences
+- Match the specified code style preferences for any code snippets
+- Adhere to the documentation style and content preferences 

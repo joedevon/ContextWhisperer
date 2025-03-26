@@ -1,0 +1,34 @@
+Create a comprehensive onboarding guide for new developers that:
+
+ACCURACY REQUIREMENTS:
+- Include ONLY setup instructions that are confirmed by configuration files in the codebase
+- Reference REAL project structure with exact file paths using "filename:line" format
+- Document ACTUAL workflows and processes as demonstrated in the code or CI/CD configuration
+- DO NOT include hypothetical tools or processes not evident in the codebase
+- If any part of the development workflow is unclear from the code, explicitly state "No code evidence for this process"
+- Base all examples on existing patterns found in the codebase
+
+1. Provides step-by-step instructions for setting up the development environment
+2. Explains the project structure and organization
+3. Outlines the development workflow (branching strategy, PR process, etc.)
+4. Documents coding standards and conventions
+5. Walks through a simple example task from start to finish
+6. Lists common gotchas and how to avoid them
+7. Includes references to key resources and documentation
+
+STRUCTURE FORMAT:
+Follow the scaffold.template guidance for documentation structure:
+- Use the standard document structure format specified in the template
+- Organize information in a logical progression from setup to advanced usage
+- Include practical examples with file references
+
+The guide should be approachable for newcomers while providing sufficient technical detail.
+Use a friendly, instructional tone with clear examples and explanations.
+
+Save the output as "onboarding_guide.md" in "docs/ai-generated/". 
+
+PREFERENCES:
+- Follow all settings in the preferences.config file for formatting, environment, and style choices
+- Use terminal command formats based on the shell specified in preferences
+- Match the specified code style preferences for any code snippets
+- Adhere to the documentation style and content preferences 
