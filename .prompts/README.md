@@ -1,11 +1,16 @@
 # Using Context Whisperer Prompts
 
-This directory contains the core prompt templates that power Context Whisperer. Here's how to use them effectively:
+This directory contains prompt templates for enhancing AI-assisted development. While the core focus is on context management, the architecture supports various development workflows.
 
 ## Directory Structure
 
 - `llm/` - Prompts that generate concise, optimized context for LLMs (extension: `.llm`)
 - `human/` - Prompts that generate human-readable documentation (extension: `.hdoc`)
+- `utility/` - General-purpose development prompts
+  - `.cursor` - Prompts optimized for Cursor IDE
+  - `.windsurf` - Prompts optimized for WindSurf (coming soon)
+  - `.claude` - Prompts optimized for Claude Code (coming soon)
+  - Git workflows, code review, and other development tasks
 
 ## Usage Instructions
 
@@ -17,6 +22,10 @@ This directory contains the core prompt templates that power Context Whisperer. 
 4. For documentation:
    - Use `./prompts/human/*.hdoc` files to generate/update documentation
    - Find generated docs in `docs/ai-generated/`
+5. For utility prompts:
+   - Choose prompts with the extension matching your IDE/assistant
+   - Each IDE version is optimized for that environment's specific features
+   - Core functionality remains similar across versions
 
 ## Output Locations
 

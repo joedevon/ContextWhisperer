@@ -1,6 +1,12 @@
 # Context Whisperer
 
-ContextWhisperer is an intelligent context management system for AI-assisted coding, designed to optimize the interaction between developers and Large Language Models (LLMs) in development environments.
+> **ContextWhisperer is an intelligent context management system for AI-assisted coding, designed to optimize the interaction between developers and Large Language Models (LLMs) in development environments.**
+
+## Origin & Philosophy
+
+ContextWhisperer emerged from experiencing the limitations of automated system prompts in AI coding assistants. While using cursorrules (system prompts), I noticed that over time, these automated prompts would accumulate stale context and become increasingly complex, leading to confused LLM responses. The solution became clear: replace automated system prompts with intentional, task-specific context management.
+
+Instead of relying on complex automated rules, ContextWhisperer uses manual, targeted prompts to generate fresh, relevant context when needed. This approach enables a powerful workflow: dedicate each context window to a single, focused task. Don't fear starting fresh windows - simply run the relevant prompts to bootstrap your new context with clean, current, LLM-optimized information about your codebase. This "fresh start" approach leads to clearer communication with AI assistants and better results.
 
 ## Problem
 
@@ -20,7 +26,10 @@ ContextWhisperer provides a series of intelligent prompts that:
 
 ## Directory Structure
 
-- `.prompts/`: Contains the core prompt templates that power the system
+- `.prompts/`: Contains prompt templates that power the system
+  - `llm/`: Prompts optimized for LLM context management
+  - `human/`: Prompts for generating human documentation
+  - `utility/`: General-purpose development prompts (git workflows, code review, etc.)
 - `.docs/`: Stores LLM-optimized context files
 - `docs/`: Houses human-readable documentation
   - `ai-generated/`: Auto-generated documentation for developers
@@ -40,9 +49,9 @@ https://github.com/joedevon/TDAID
 ## Author
 
 ### Joe Devon
-- 🐦 Social Media: @joedevon across platforms
-- 🎙️ Podcast: [A11yGenAI](https://www.youtube.com/@a11ygenai) - Accessibility and Gen. AI
-- 📫 Newsletter: [Joe Dev On Tech](https://www.linkedin.com/newsletters/joe-dev-on-tech-7240847501472194560/) - Weekly technology insights
+- 🐦 Social Media: @joedevon
+- 🎙️ Podcast: [Accessibility and Gen. AI](https://www.youtube.com/@a11ygenai)
+- 📫 Newsletter: [Joe Dev On Tech](https://www.linkedin.com/newsletters/joe-dev-on-tech-7240847501472194560/) - subscribe to get updates on my projects and articles
 
 ## Contributing
 
