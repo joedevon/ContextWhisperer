@@ -9,8 +9,9 @@ This directory contains prompts for generating context and documentation:
 
 ## How to Use
 
-1. With Cursor, use the `@` symbol to tag a prompt file in the chat (e.g., `@.prompts/llm/1.core_architecture_and_domain.llm`)
-2. The AI will process the prompt and generate the appropriate output
+1. When your context window gets too large, use the `./prompts/llm/x.category_name.llm` file(s) to generate concise documentation designed for LLMs.
+2. Then start a new chat and use the `.docs` generated files to feed the appropriate context to the new context window.
+3. If you want updated human-readable documentation, use the `./prompts/human/x.category_name.hdoc` file(s) to generate the updated documentation in the `./docs/ai-generated` directory.
 
 ## Output Locations
 
