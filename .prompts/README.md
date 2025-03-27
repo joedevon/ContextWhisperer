@@ -1,26 +1,29 @@
-# Context Whisperer Prompts
+# Using Context Whisperer Prompts
 
-This directory contains prompts for generating context and documentation:
+This directory contains the core prompt templates that power Context Whisperer. Here's how to use them effectively:
 
 ## Directory Structure
 
 - `llm/` - Prompts that generate concise, optimized context for LLMs (extension: `.llm`)
 - `human/` - Prompts that generate human-readable documentation (extension: `.hdoc`)
 
-## How to Use
+## Usage Instructions
 
-1. When your context window gets too large, use the `./prompts/llm/x.category_name.llm` file(s) to generate concise documentation designed for LLMs.
-2. Then start a new chat and use the `.docs` generated files to feed the appropriate context to the new context window.
-3. If you want updated human-readable documentation, use the `./prompts/human/x.category_name.hdoc` file(s) to generate the updated documentation in the `./docs/ai-generated` directory.
+1. Review the prompt templates in this directory
+2. Execute prompts by feeding them to your preferred AI coding assistant
+3. For context management:
+   - Use `./prompts/llm/*.llm` files when your context window gets too large
+   - Start a new chat and reference generated `.docs` files for context
+4. For documentation:
+   - Use `./prompts/human/*.hdoc` files to generate/update documentation
+   - Find generated docs in `docs/ai-generated/`
 
 ## Output Locations
 
-- LLM prompts (`.llm`) output to the `.docs/` directory
-- Human prompts (`.hdoc`) output to the `docs/ai-generated/` directory
+- LLM prompts (`.llm`) → `.docs/` directory
+- Human prompts (`.hdoc`) → `docs/ai-generated/` directory
 
-## Prompt Naming Convention
-
-Both directories use numbered prompts to suggest execution order:
+## Prompt Categories and Order
 
 ### LLM Prompts (`llm/`)
 - `0.prep_add_inline_comments.llm` - Adds comments to code (no output file)
