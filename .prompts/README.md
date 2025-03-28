@@ -1,49 +1,74 @@
 # Using Context Whisperer Prompts
 
-This directory contains prompt templates for enhancing AI-assisted development. While the core focus is on context management, the architecture supports various development workflows.
+This directory contains prompt templates for enhancing AI-assisted development, focusing on context management and consistent architectural patterns.
 
 ## Directory Structure
 
-- `llm/` - Prompts that generate concise, optimized context for LLMs (extension: `.llm`)
-- `human/` - Prompts that generate human-readable documentation (extension: `.hdoc`)
+- `ai/` - Prompts that generate concise, optimized context for LLMs
+  - Output files go to `.docs/` with `*_context.md` naming pattern
+  - Example: `ai_architecture_prompt.md` → `.docs/architecture_context.md`
+
+- `human/` - Prompts that generate human-readable documentation
+  - Output files go to `docs/ai-generated/` with `*_doc.md` naming pattern
+  - Example: `human_architecture_prompt.md` → `docs/ai-generated/architecture_doc.md`
+
 - `utility/` - General-purpose development prompts
-  - `.cursor` - Prompts optimized for Cursor IDE
-  - `.windsurf` - Prompts optimized for WindSurf (coming soon)
-  - `.claude` - Prompts optimized for Claude Code (coming soon)
-  - Git workflows, code review, and other development tasks
+  - `cross_cutting_interview.md` - Interactive setup for `llm.yaml`
+  - `add_inline_comments.md` - Adds AI-focused context
+  - `readme_reconciliation.md` - Detects architectural drift
+  - Other utility prompts for git workflows, code review, etc.
 
 ## Usage Instructions
 
-1. Review the prompt templates in this directory
-2. Execute prompts by feeding them to your preferred AI coding assistant
-3. For context management:
-   - Use `./prompts/llm/*.llm` files when your context window gets too large
-   - Start a new chat and reference generated `.docs` files for context
-4. For documentation:
-   - Use `./prompts/human/*.hdoc` files to generate/update documentation
-   - Find generated docs in `docs/ai-generated/`
-5. For utility prompts:
-   - Choose prompts with the extension matching your IDE/assistant
-   - Each IDE version is optimized for that environment's specific features
-   - Core functionality remains similar across versions
+1. Configure Cross-Cutting Concerns:
+   - Run `utility/cross_cutting_interview.md` to set up `llm.yaml`
+   - This ensures consistent handling of logging, error handling, etc.
 
-## Output Locations
+2. Prepare Codebase Context:
+   - Run `utility/add_inline_comments.md` to add AI-focused inline comments
+   - This helps LLMs understand architectural decisions and patterns
+   - Focus on documenting cross-cutting concerns implementation
 
-- LLM prompts (`.llm`) → `.docs/` directory
-- Human prompts (`.hdoc`) → `docs/ai-generated/` directory
+3. Generate LLM Context:
+   - Use prompts in `ai/*.md` to generate optimized context
+   - Context files are saved in `.docs/` directory
+   - Reference these in new chat sessions for consistent context
 
-## Prompt Categories and Order
+4. Generate Human Documentation:
+   - Use prompts in `human/*.md` to generate documentation
+   - Docs are saved in `docs/ai-generated/`
 
-### LLM Prompts (`llm/`)
-- `0.prep_add_inline_comments.llm` - Adds comments to code (no output file)
-- `1.core_architecture_and_domain.llm` - Core architecture and domain concepts
-- `2.ops_operations.llm` - Operational aspects
-- `3.ext_apis_and_extensions.llm` - APIs and extension points
-- `4.ext_security_and_refactoring.llm` - Security and refactoring opportunities
+5. Monitor Architectural Drift:
+   - Run `utility/readme_reconciliation.md` periodically
+   - Compares actual implementation (`crosscutting_context.md`) with desired patterns (`llm.yaml`)
+   - Helps identify inconsistencies in cross-cutting concerns
 
-### Human Prompts (`human/`)
-- `1.architecture_overview.hdoc` - Detailed architecture explanation
-- `2.onboarding_guide.hdoc` - Developer onboarding documentation
-- `3.component_documentation.hdoc` - Component-level documentation
-- `4.workflows_and_processes.hdoc` - Business workflows and processes
-- `5.troubleshooting_guide.hdoc` - Common issues and solutions 
+## Available Prompts
+
+### AI Context Prompts
+- `ai_architecture_prompt.md` - Core architecture and patterns
+- `ai_operations_prompt.md` - Operational aspects
+- `ai_integrations_prompt.md` - External APIs and integrations
+- `ai_security_prompt.md` - Security measures and improvements
+- `ai_crosscutting_prompt.md` - Actual cross-cutting implementations
+
+### Human Documentation Prompts
+- `human_architecture_prompt.md` - Detailed architecture docs
+- `human_onboarding_prompt.md` - Developer onboarding
+- `human_components_prompt.md` - Component documentation
+- `human_workflows_prompt.md` - Business workflows
+- `human_troubleshooting_prompt.md` - Common issues and solutions
+- `human_future_prompt.md` - Future improvements
+- `human_crosscutting_prompt.md` - Cross-cutting patterns guide
+
+### Utility Prompts
+- `cross_cutting_interview.md` - Interactive `llm.yaml` setup
+- `add_inline_comments.md` - Add AI-focused context
+- `readme_reconciliation.md` - Detect architectural drift
+- `commit_msg.cursor.md` - Git commit message helper
+
+## Powered by ContextWhisperer
+
+[ContextWhisperer](https://github.com/joedevon/contextwhisperer) is a project by [Joe Devon](https://linkedin.com/in/joedevon). It's open source and free to use.
+
+If you like it, please star the repo.

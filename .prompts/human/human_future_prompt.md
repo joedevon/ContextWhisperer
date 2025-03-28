@@ -1,14 +1,11 @@
-# Next Steps and Improvement Opportunities
+# Codebase Improvement Opportunities
 
-Create a comprehensive roadmap document that identifies code improvement opportunities:
+This template analyzes the codebase to identify potential improvements and next steps for developers.
 
 ACCURACY REQUIREMENTS:
-- List ONLY issues that can be identified directly in the codebase
-- For each item, provide EXACT file references using "filename:line" format
-- Include ACTUAL code snippets demonstrating the issues, not fabricated examples
-- DO NOT suggest improvements for hypothetical problems not found in the code
-- If any suggested improvement lacks clear code evidence, explicitly state "Potential improvement based on limited evidence"
-- Base all recommendations on objective code analysis rather than speculation
+- Base ALL suggestions on verifiable code evidence
+- Focus on concrete, actionable improvements
+- Mark uncertainties as "Potentially Missing Information"
 
 1. Identify and categorize improvement opportunities:
    - Technical debt (complex code, workarounds, outdated patterns)
@@ -40,7 +37,8 @@ Follow the scaffold.template guidance for document structure:
 - Organize information in a logical progression from highest to lowest priority
 - Include practical examples with file references
 
-Save the output as "next_steps.md" in "docs/ai-generated/".
+OUTPUTS:
+1. Save the main document as "future_doc.md" in "docs/ai-generated/"
 
 PREFERENCES:
 - Follow all settings in the preferences.config file for formatting, environment, and style choices

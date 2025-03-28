@@ -3,7 +3,10 @@ Summarize essential operational details:
 2. Testing approaches (unit, integration, key frameworks)
 3. Build & local dev patterns (build tools, code style)
 4. Deployment & CI/CD (pipeline steps, environment handling)
-5. Observability & monitoring (metrics, alerting)
+5. Observability & monitoring:
+   - Specific metrics being collected and granularity
+   - Performance optimization patterns
+   - Alerting and dashboards
 6. Note any cross-cutting operational concerns that affect multiple areas (for example, logging patterns used throughout).
 
 ACCURACY REQUIREMENTS:
@@ -14,4 +17,4 @@ ACCURACY REQUIREMENTS:
 - DO NOT assume deployment or monitoring approaches without supporting files
 
 Focus on minimal information an LLM can parse easily.
-Save as "ops_operations.md" in ".docs". 
+Save as "operations_context.md" in ".docs". 

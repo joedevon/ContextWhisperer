@@ -1,0 +1,27 @@
+# Cross-cutting concerns configuration for LLM code generation
+# Uncomment and modify values based on your architectural decisions
+# For interactive setup, use the cross-cutting interview prompt
+
+# Environment Variables
+env:
+  # strategy: "secrets_manager"  # Options: secrets_manager, dotenv, environment
+
+# Logging
+logging:
+  # type: "structured"  # Options: structured, basic
+
+# Error Handling
+errors:
+  # strategy: "domain"  # Options: domain, generic
+
+# Authentication
+auth:
+  # strategy: "jwt"  # Options: jwt, session, oauth
+
+# API
+api:
+  # format: "jsend"  # Options: jsend, problem_details
+
+# Testing
+testing:
+  # framework: "jest"  # Specify your preferred framework 
